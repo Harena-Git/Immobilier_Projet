@@ -1,0 +1,6 @@
+DROP TABLE IF EXISTS reservations;
+DROP TABLE IF EXISTS habitation_photos;
+DROP TABLE IF EXISTS availabilities;
+DROP TABLE IF EXISTS habitations;
+DROP TABLE IF EXISTS admins;
+DROP TABLE IF EXISTS users;

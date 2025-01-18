@@ -1,0 +1,315 @@
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url('image/noel.webp') no-repeat center center fixed;
+}/* Fixed Header Styling */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: url(image/back.jpg);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    background-color: #ff0000;
+}
+
+footer p {
+    color: #000000;
+}
+
+/* Space for Fixed Header */
+main {
+    padding-top: 80px;
+    /* background-image: url(2.jpeg); /* Adjust based on header height */
+    background-size: cover;
+}
+
+/* Left Navigation Styling */
+.nav-left {
+    display: flex;
+    gap: 50px;
+    margin-left: 20px;
+     /* Move closer to the center */
+}
+
+.nav-left a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+}
+
+/* Center Logo Styling */
+.nav-center {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.nav-center h1 {
+    font-size: 2em;
+    margin: 0;
+    color: #ff0000;
+}
+
+/* Right Navigation Styling */
+.nav-right {
+    display: flex;
+    gap: 50px;
+    margin-right: 20px; /* Move closer to the center */
+}
+.nav-right a {
+    text-decoration: none;
+    color: rgb(245, 224, 224);
+    font-weight: 500;
+}
+
+/* Section centrale pour RESTO */
+.resto {
+    text-align: center;
+    color: #ff0000;
+    font-family: cursive;
+    font-size: 2.5em;
+}
+/* Styles des liens */
+nav a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ee4646;
+}
+
+/* Mise en page du main en CSS Grid */
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    padding: 20px;
+    flex: 1;
+}
+
+
+article {
+    background-color: #e4e4e4;
+    padding: 20px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.menu-icon {
+    cursor: pointer;
+    padding-right: 10px;
+    font-size: 1.5em; /* Adjust size as needed */
+}
+
+.image-container {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-container {
+    flex: 1;
+}
+
+.text-container h2 {
+    color: #111;
+    font-size: 2.4em;
+    margin-bottom: 10px;
+}
+
+.text-container p {
+    color: #555;
+    font-size: 1em;
+}
+
+.special-recipe {
+    max-width: 900px;
+    width: 100%;
+}
+
+.special-recipe h3 {
+    font-size: 1.8em;
+    color: #111;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.recipe-gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.recipe-item {
+    text-align: center;
+    max-width: 200px;
+}
+
+.recipe-item img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-item p {
+    color: #e74c3c;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.reservation {
+    /* background-image: url('2.jpeg');  */
+     /* background-size: cover; */
+    /* background-position: center;  */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* padding-top: 50px; */
+       border-radius: 20px;
+     
+}
+
+.form-container {
+    width: 300px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.form-container h3 {
+    color: #ff5722;
+    font-size: 20px;
+}
+
+.form-container h1 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.form-container input, .form-container select, .form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-container .date-time {
+    display: flex;
+    gap: 10px;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e91e1e;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 11px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+    background-color: #ff000096;
+}
+
+
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #0d22af; /* Bleu très foncé */
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.no-results {
+    text-align: center;
+    font-size: 18px;
+    color: #e74c3c;
+}
+
+
+.section {
+    width: 200%;
+    padding-top: 5%;
+}
+
+
+#ahref {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    background-color: #1507b8;
+    border: none;
+    border-radius: 30px;
+    font-size: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+
+#ahref a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 10px;
+}
+
+
+
+
+
+
+
+
